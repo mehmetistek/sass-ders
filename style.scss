@@ -1,0 +1,47 @@
+@import 'colors';
+@import 'menu';
+$kutu-kose-boyutu: 14px;
+
+body{
+
+    background-color: $arkaplan-rengi;
+}
+
+.ustKisim{
+    background-color: $kutu-rengi;
+    color: $kutu-yazi-rengi;
+}
+
+
+%ozelButon{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    outline: none;
+    
+    &:hover{
+        transition: .3s;
+        background-color: green;
+    }
+}
+
+@mixin yaricapVer($cap){
+    border-radius: $cap
+}
+
+.btn1{
+    @extend %ozelButon;
+    border-radius: 10px+10;
+    cursor: pointer;
+}
+
+.btn2{
+    @extend %ozelButon;
+    box-shadow: 0 0 10px yellow;
+}
+
+.btn3{
+    @include yaricapVer(10px)
+}

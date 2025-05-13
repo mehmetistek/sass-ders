@@ -1,0 +1,61 @@
+header {
+  background-color: red;
+  margin: 10px;
+}
+header nav {
+  background-color: yellow;
+  margin: 10px;
+}
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: green;
+}
+header nav ul li {
+  margin-left: 10px;
+  padding: 10px;
+  list-style-type: none;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  background-color: red;
+  transition: 0.3s;
+}
+
+body {
+  background-color: burlywood;
+}
+
+.ustKisim {
+  background-color: blue;
+  color: white;
+}
+
+.btn2, .btn1 {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  outline: none;
+}
+.btn2:hover, .btn1:hover {
+  transition: 0.3s;
+  background-color: green;
+}
+
+.btn1 {
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btn2 {
+  box-shadow: 0 0 10px yellow;
+}
+
+.btn3 {
+  border-radius: 10px;
+}/*# sourceMappingURL=style.css.map */
